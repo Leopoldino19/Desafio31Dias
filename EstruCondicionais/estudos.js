@@ -21,6 +21,7 @@ if (hora < 12) {
 } else {
   console.log("Boa noite! 🌙");
 }
+
 //? Explicação:
 // 1. Se `hora` for menor que 12, imprime "Bom dia!".
 // 2. Caso contrário, se `hora` for menor que 18, imprime "Boa tarde!".
