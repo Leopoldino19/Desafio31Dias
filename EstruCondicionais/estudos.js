@@ -51,9 +51,65 @@ if (numero %2 === 0){
 let nota = 6.9;
 
 if(nota >= 90){
-  console.log("Aprovado com sucesso")
+  console.log("Aprovado com sucesso");
 } else if(nota >= 70){
-  console.log("Passou raspando!")
+  console.log("Passou raspando!");
 } else{
-  console.log("Não foi dessa vez")
+  console.log("Não foi dessa vez");
+}
+
+//? 🛠️ Dicas Importantes
+//? - Coloque condições mais específicas primeiro:
+if (nota >= 90) {
+  // Específico
+} else if (nota >= 50) {
+  // Geral
+}
+//? - Use `switch` para evitar muitos `else if`:
+//?     Quando há muitas opções baseadas em um único valor, o `switch` torna o código mais legível.
+//? - Evite duplicar código:
+// ?    Tente organizar as condições de forma a evitar repetições desnecessárias.
+
+//* 🔄 `switch`
+
+//* O `switch` é útil quando você precisa testar **vários casos diferentes** para uma mesma variável.
+
+let diaSemana = 2;
+
+switch (diaSemana) {
+  case 1:
+    console.log("Segunda-feira");
+    break;
+  case 2:
+    console.log("Terça-feira");
+    break;
+  case 3:
+    console.log("Quarta-feira");
+    break;
+  default:
+    console.log("Outro dia");
+}
+//* 📌 Explicação:
+
+//* - Cada `case` é uma condição que verifica o valor da variável `diaSemana`.
+//* - O `default` é executado se nenhum dos casos for verdadeiro.
+//* - O `break` impede que o código continue executando outros casos.
+
+//? testes-----------
+let opcao = "Vendas";
+switch(opcao){
+  case "Pagar":
+    let pix = "chave pix";
+    let cartao = "credito";
+    console.log(pix)
+    break;
+  case "Vendas":
+    let ultimaVenda = " ultima venda";
+    let historicoVendas = "Relatorio das ultmas vendas";
+    console.log(historicoVendas);
+    break;
+  case "boleto":
+    let boleto = "Erro no sistema"
+    console.log(boleto)
+    break;
 }
