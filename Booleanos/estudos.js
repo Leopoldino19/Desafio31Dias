@@ -37,9 +37,39 @@
 let estaLogado = false;
 
 if(estaLogado){
-    //console.log("Bem vindo de volta! meu parceiro")
-    console.log("Faça o login, meu parceiro!")
+    console.log("Bem vindo de volta! meu parceiro") 
 } else {
-   // console.log("Faça o login, meu parceiro!")
-    console.log("Bem vindo de volta! meu parceiro")
+   console.log("Faça o login, meu parceiro!")
+}
+//dessa maneira, “true” vai imprimir a primeira opção e “false” a segunda opção
+
+//Exemplo Classificando Notas
+
+let nota = 90;
+
+if(nota >= 90){
+   console.log("Parabéns, você tirou “A” !")
+} else if(nota >= 70 && nota < 90 ){
+   console.log("Foi por pouco gafanhoto, tirou “B”")
+}else{
+   console.log("Precisa estudar mais, meu jovem gafanhoto “C”")
+}
+
+// Exemplos Negação com "!"
+
+let luzAcesa = true;
+
+if(!luzAcesa){
+   console.log(" As luzes estão apagadas!")
+}
+//“!” vai negar a situação atual, então só vai imprimir se variável for 
+
+// Exercicio Combinação de condições 
+let saldo = 1;
+let cartao = false;
+
+if (saldo > 0 || cartao){
+   console.log("Pode comprar oque você quer!")
+} else {
+   console.log("Não foi dessa vez")
 }
