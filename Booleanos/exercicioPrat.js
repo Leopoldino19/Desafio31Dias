@@ -32,3 +32,23 @@ if(notaProva >= 90){
 } else{
     console.log("Reprovado");
 }
+
+// 4. Crie uma variável `saldo` e verifique:
+//     - Se `saldo > 0`: Mostre "Saldo positivo".
+//     - Se `saldo === 0`: Mostre "Sem saldo".
+//     - Caso contrário, mostre "Saldo negativo".
+let saldo = -4;
+ if(saldo > 0){
+    console.log("Saldo positivo");
+ } else if ( saldo === 0){
+    console.log("Sem saldo")
+ } else{
+    console.log("Saldo negativo")
+ }
+
+//  5 - Use o operador ! para verificar se uma luz está apagada e ligue-a.
+let luzAcesa = false;
+
+if (!luzAcesa){
+    console.log("luz apagada")
+}
